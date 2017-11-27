@@ -1,0 +1,13 @@
+<div class="event" (click)="active = true">
+  {{ event.name }}
+  <div class="event__detail" *ngIf="active">
+    <div class="event__detail-head">{{ event.name }}</div>
+    <div class="event__detail-body">
+      {{ event.date | date:'dd MMMM yyyy'}}<br/>
+      {{ event.about }}
+    </div>
+    <div class="event__detail-foot">
+      {{ event.members.join(', ') }}
+    </div>
+  </div>
+</div>

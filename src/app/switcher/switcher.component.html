@@ -1,0 +1,28 @@
+<div class="switcher">
+  <button class="switcher__button" (click)="switchDate('prev')">
+    <svg class="switcher__button-icon">
+      <path d="M 17,12 l -5,5 l 5,5"></path>
+    </svg>
+  </button>
+  <div class="switcher__text">{{ formatedDate }}</div>
+  <button class="switcher__button " (click)="switchDate('next')">
+    <svg class="switcher__button-icon">
+      <path d="M 14,12 l 5,5 l -5,5"></path>
+    </svg>
+  </button>
+</div>
+<div class="month">
+  <div class="month__head">
+    <div class="month__head-item">понедельник</div>
+    <div class="month__head-item">вторник</div>
+    <div class="month__head-item">среда</div>
+    <div class="month__head-item">четверг</div>
+    <div class="month__head-item">пятница</div>
+    <div class="month__head-item">суббота</div>
+    <div class="month__head-item">воскресенье</div>
+  </div>
+  <div class="month__body">
+    <app-day *ngFor="let day of days" [day]="day" [events]="events"></app-day>
+  </div>
+</div>
+

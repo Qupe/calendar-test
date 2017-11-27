@@ -1,0 +1,24 @@
+.day {
+  position: relative;
+  width: 14.2858%;
+  float: left;
+  box-sizing: border-box;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  height: 20%;
+  padding: 3px;
+}
+
+.day_active {
+  background: #dbeaf5;
+}
+
+.day__number {
+  font-size: 12px;
+  color: #cdcdcd;
+  margin: 7px 0 7px 7px;
+}
+
+.day__number_current {
+  color: #7e7e7e;
+}

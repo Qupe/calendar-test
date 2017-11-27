@@ -1,0 +1,5 @@
+<div class="day" [class.day_active]="show" (click)="show = true">
+  <div class="day__number" [class.day__number_current]="day.current">{{ day.number }}</div>
+  <app-event *ngFor="let event of day.events" [event]="event"></app-event>
+  <app-add-event [show]="show" [date]="day.date"></app-add-event>
+</div>

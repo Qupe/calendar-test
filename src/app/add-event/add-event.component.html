@@ -1,0 +1,11 @@
+<form class="add-event-form" #f="ngForm"  *ngIf="show" (ngSubmit)="submit(f.value)">
+  <input type="text" class="add-event-form__input" name="name" ngModel placeholder="Название события" required="required"/>
+  <input type="text" class="add-event-form__input" name="members" ngModel placeholder="Имена участников" required/>
+  <textarea class="add-event-form__input" rows="8" name="about" ngModel placeholder="Описание"></textarea>
+  <button class="add-event-form__button">
+    Добавить
+  </button>
+  <span class="add-event-form__button add-event-form__button_secondary" (click)="show = false">
+    Отменить
+  </span>
+</form>

@@ -1,0 +1,67 @@
+.switcher {
+  font-size: 20px;
+  color: #7e7e7e;
+  margin-bottom: 9px;
+}
+
+.switcher__button,
+.switcher__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switcher__button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  outline: none;
+  background: none;
+}
+
+.switcher__button .switcher__button-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+}
+
+.switcher__button .switcher__button-icon path {
+  fill: none;
+  stroke: #9c9c9c;
+  stroke-width: 2px;
+}
+
+.switcher__text {
+  margin: 0 10px;
+}
+
+.month {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  height: calc(100vh - 82px);
+}
+
+.month__head {
+  overflow: hidden;
+}
+
+.month__body {
+  height: calc(100% - 28px);
+}
+
+.month__head-item {
+  width: 14.2858%;
+  float: left;
+  text-align: center;
+  background: #eeeeee;
+  padding: 7px 0;
+  font-size: 12px;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  box-sizing: border-box;
+  color: #979797;
+}
+

@@ -1,0 +1,65 @@
+.add-event-form {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  border-radius: 3px;
+  z-index: 100;
+  padding: 10px;
+  width: 300px;
+  top: -7px;
+  left: -308px;
+  box-sizing: border-box;
+}
+
+.add-event-form:after {
+  content: '';
+  display: block;
+  transform: rotate(45deg);
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  right: -6px;
+}
+
+.add-event-form__input {
+  font-weight: normal;
+  font-size: 12px;
+  color: #414042;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #b7b7b7;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.add-event-form__button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #3498db;
+  background: #3498db;
+  outline: none;
+  margin-right: 10px;
+}
+
+.add-event-form__button_secondary {
+  background: transparent;
+  color: #3498DB;
+}
